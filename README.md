@@ -1,47 +1,42 @@
-# Secure Automotive OTA & Boot Validation Simulation
+Güvenli Otomotiv OTA & Boot Doğrulama Simülasyonu
+📌 Genel Bakış
 
-## Overview
-This project simulates a secure Over-The-Air (OTA) firmware update system for an automotive ECU.
+Bu proje, bir otomotiv ECU’su için güvenli bir Over-The-Air (OTA) firmware güncelleme sistemini simüle eder.
 
-The system demonstrates how modern vehicles securely download, verify, and install firmware updates while preventing cybersecurity attacks.
+Sistem, modern araçların firmware güncellemelerini güvenli bir şekilde indirip doğruladığını ve kurduğunu, aynı zamanda siber saldırılara karşı nasıl korunduğunu gösterir.
 
-## Features
+🚀 Özellikler
+OTA firmware güncelleme simülasyonu
+RSA dijital imza doğrulama
+Sürüm düşürme (anti-downgrade) koruması
+Secure Boot simülasyonu (SHA-256 hash doğrulama)
+Firmware bütünlüğü (manipülasyon) tespiti
+🏗️ Mimari
+🔹 Sunucu
+Firmware barındırır
+Versiyon bilgisi sağlar
+Firmware’i dijital olarak imzalar
+🔹 ECU İstemcisi
+Güncel versiyonu kontrol eder
+Firmware indirir
+Dijital imzayı doğrular
+Sürüm düşürme saldırılarını engeller
+Açılış sırasında firmware bütünlüğünü doğrular
+🛠️ Kullanılan Teknolojiler
+Python
+FastAPI
+RSA Kriptografi
+SHA-256 Hashleme
+REST API
+🔒 Uygulanan Güvenlik Mekanizmaları
+Dijital imza doğrulama
+Firmware bütünlük kontrolü
+Anti-downgrade mekanizması
+Secure Boot doğrulaması
+🎯 Amaç
 
-- OTA firmware update simulation
-- RSA digital signature verification
-- Anti-downgrade protection
-- Secure Boot simulation (SHA-256 hash validation)
-- Firmware tamper detection
+Bu proje, aşağıdaki otomotiv siber güvenlik konularına hakimiyeti göstermeyi amaçlar:
 
-## Architecture
-
-Server:
-- Hosts firmware
-- Provides version endpoint
-- Signs firmware
-
-ECU Client:
-- Checks latest version
-- Downloads firmware
-- Verifies digital signature
-- Prevents downgrade attacks
-- Validates firmware integrity during boot
-
-## Technologies Used
-
-- Python
-- FastAPI
-- RSA Cryptography
-- SHA-256 Hashing
-- REST API
-
-## Security Mechanisms Implemented
-
-1. Digital Signature Verification  
-2. Firmware Integrity Check  
-3. Anti-Downgrade Logic  
-4. Secure Boot Validation  
-
-## Purpose
-
-This project demonstrates understanding of automotive cybersecurity principles including OTA update security, firmware validation, and secure boot mechanisms.
+OTA güncelleme güvenliği
+Firmware doğrulama
+Secure Boot mekanizmaları
