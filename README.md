@@ -14,10 +14,12 @@ Secure Boot simülasyonu (SHA-256 hash doğrulama)
 Firmware bütünlüğü (manipülasyon) tespiti
 
 🏗️ Mimari
+
 🔹 Sunucu
 Firmware barındırır
 Versiyon bilgisi sağlar
 Firmware’i dijital olarak imzalar
+
 🔹 ECU İstemcisi
 Güncel versiyonu kontrol eder
 Firmware indirir
